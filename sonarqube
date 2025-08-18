@@ -1,0 +1,8 @@
+# sonarqube instalation
+#install docker first and test docker its working or not
+# creating the volumes
+docker volume create --name sonarqube_data
+docker volume create --name sonarqube_logs
+docker volume create --name sonarqube_extentions
+# running sonarqube container
+docker run -d --name sonarcube -p 9000:9000 -e SONAR_JDBC_USERNAME=admin -e SONAR_JDBC_PASSWORD=admin -v sonarqube_data:/opt/sonarqube/data -v sonarqube_logs:/opt/sonarqube/logs -v sonarqube_extensions:/opt/sonarqube/extensions sonarqube
