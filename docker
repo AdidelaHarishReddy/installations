@@ -16,5 +16,5 @@ sudo apt-get update
 sleep 5
 sudo apt update
 sudo groupadd docker
-sudo usermod -aG docker ubuntu
+sudo usermod -aG docker $USER
 newgrp docker
