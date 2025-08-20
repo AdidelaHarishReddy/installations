@@ -10,6 +10,8 @@ sudo mv sonar-scanner-7.2.0.5079-linux /opt/sonar-scanner
 #Add it to your PATH
 echo 'export PATH=$PATH:/opt/sonar-scanner/bin' >> ~/.bashrc
 source ~/.bashrc
+#or create a link file in path area
+#sudo ln -s /opt/sonar-scanner/bin/sonar-scanner /usr/local/bin/sonar-scanner
 sleep 10
 #verify instalation
 sonar-scanner --version
