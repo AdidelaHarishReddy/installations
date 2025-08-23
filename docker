@@ -16,4 +16,4 @@ sleep 5
 sudo apt update
 sudo groupadd docker
 sudo usermod -aG docker ubuntu
-sudo newgrp docker
+echo " run the command for remove sudo previlages: newgrp docker "
