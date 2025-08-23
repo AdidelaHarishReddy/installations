@@ -16,4 +16,5 @@ sleep 5
 sudo apt update
 sudo groupadd docker
 sudo usermod -aG docker ubuntu
+echo "if its jenkins server run the command: sudo usermod -aG docker jenkins"
 echo " run the command for remove sudo previlages: newgrp docker "
