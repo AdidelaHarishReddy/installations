@@ -1,0 +1,8 @@
+echo " jenkins installing....."
+curl -s https://raw.githubusercontent.com/AdidelaHarishReddy/installations/refs/heads/main/jenkins.sh | bash
+echo " trivy installing....."
+curl -s https://raw.githubusercontent.com/AdidelaHarishReddy/installations/refs/heads/main/trivy | bash
+echo " sonar-cli installing....."
+curl -s https://raw.githubusercontent.com/AdidelaHarishReddy/installations/refs/heads/main/sonar%20-cli-harsha | bash
+echo " docker installing....."
+curl -s https://github.com/AdidelaHarishReddy/installations/blob/main/docker | bash
