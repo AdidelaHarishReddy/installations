@@ -5,4 +5,4 @@ curl -s https://raw.githubusercontent.com/AdidelaHarishReddy/installations/refs/
 echo " sonar-cli installing....."
 curl -s https://raw.githubusercontent.com/AdidelaHarishReddy/installations/refs/heads/main/sonar%20-cli-harsha | bash
 echo " docker installing....."
-curl -s https://github.com/AdidelaHarishReddy/installations/blob/main/docker | bash
+curl -s https://raw.githubusercontent.com/AdidelaHarishReddy/installations/refs/heads/main/docker | bash
