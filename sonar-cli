@@ -1,12 +1,13 @@
 #Download SonarScanner
 sudo apt update
-wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-7.2.0.5079-linux.zip
+wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1.3006-linux.zip
+#wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-7.2.0.5079-linux.zip
 #install unzip
 sudo apt install unzip
 #unzip file
-unzip sonar-scanner-cli-7.2.0.5079-linux.zip
+unzip sonar-scanner-cli-5.0.1.3006-linux.zip
 #Move to a permanent location (optional)
-sudo mv sonar-scanner-7.2.0.5079-linux /opt/sonar-scanner
+sudo mv sonar-scanner-5.0.1.3006-linux /opt/sonar-scanner
 #Add it to your PATH
 echo 'export PATH=$PATH:/opt/sonar-scanner/bin' >> ~/.bashrc
 source ~/.bashrc
