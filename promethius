@@ -1,6 +1,6 @@
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 kubectl create namespace monitoring
-helm upgrade -i prometheus prometheus-community/prometheus --namespace monitoring --set alertmanager.persistence.storageClass="gp2" --set server.persistentVolume.storageClass="gp2"
+helm upgrade -i prometheus prometheus-community/prometheus --namespace monitoring --set alertmanager.persistence.storageClass="gp3" --set server.persistentVolume.storageClass="gp3"
 sleep 15
 #identify the Prometheus Pod name, and create that as an environment variable.
 export POD_NAME=$(kubectl get pods --namespace monitoring -l "app.kubernetes.io/name=prometheus,app.kubernetes.io/instance=prometheus" -o jsonpath="{.items[0].metadata.name}")
